@@ -39,5 +39,18 @@ static const char col_cyan[]        = "#696969";
 ```
 
 ## Patches
+```
+mkdir /usr/src/dwm/patches
+cd /usr/src/dwm/patches
+```
 
-- Vanitygaps (adds gaps between windows): dwm-vanitygaps-20190508-6.2.diff
+- Vanitygaps (adds gaps between windows):
+```
+wget https://dwm.suckless.org/patches/vanitygaps/dwm-vanitygaps-20190508-6.2.diff
+```
+
+How to patch:
+```
+cd /usr/src/dwm
+patch < patches/patchname.diff
+```
